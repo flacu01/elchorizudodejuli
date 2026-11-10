@@ -459,3 +459,8 @@ body.pagina_filtrando .bloque_galeria_juego { display: none; }
   .js_activo .aparicion_scroll { opacity: 1; transform: none; }
   .particulas_contenedor { display: none; }
 }
+
+#creditos {
+  text-align: center;
+  padding: 2rem 1rem;
+}
