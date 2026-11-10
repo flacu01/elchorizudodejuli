@@ -11,3 +11,5 @@ dan sus consejos a quien viaje por Hallownest y Pharloom.
 
 ## Tecnologías
 HTML, CSS y JavaScript.
+
+Hecho por Facundo Rodriguez y Valentino Bustamante
