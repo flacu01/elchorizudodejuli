@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hollow Knight · Los consejos de Zote</title>
+  <meta name="description" content="27 consejos de Zote el Todopoderoso para sobrevivir en Hallownest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/home.css">
+  <script>document.documentElement.classList.add('js_activo')</script>
+</head>
+<body class="pagina_hollow">
+  <header class="cabecera_sitio">
+    <nav class="nav_principal" aria-label="Principal">
+      <ul>
+        <li class="nav_item_izquierda"><a href="hollow.html" class="nav_enlace_activo">Hollow Knight</a></li>
+        <li class="nav_item_centro"><a href="../index.html" class="nav_enlace_inicio">✦ Inicio ✦</a></li>
+        <li class="nav_item_derecha"><a href="silksong.html">Silksong</a></li>
+      </ul>
+    </nav>
+    <div class="barra_progreso" id="progress"></div>
+  </header>
+  <main>
+    <section class="hero_pagina_juego">
+      <p class="etiqueta_superior_titulo">Hallownest · 27 consejos</p>
+      <h1 class="titulo_hero_juego_tamano titulo_hero_juego">Hollow knight</h1>
+      <div class="retrato_hero_contenedor">
+        <img class="retrato_hero_imagen" src="../Imagenes/imagenes_hollow/principal-hollow-knight.webp" alt="Hollow knight">
+      </div>
+      <p class="subtitulo_hero_juego">Guía de supervivencia dictada por Zote el Todopoderoso (él lo dice, no yo).</p>
+    </section>
+
+    <figure class="marco_imagen marco_imagen_mapa aparicion_scroll" style="aspect-ratio:630 / 410">
+          <img src="../Imagenes/imagenes_hollow/banner-hollow-knight.webp" alt="Mapa de Hallownest" loading="lazy" decoding="async">
+          <figcaption>Hallownest, el reino olvidado</figcaption>
+        </figure>
+
+    <div class="bloque_presentacion_guia panel_general aparicion_scroll">
+      <span class="etiqueta_personaje_presentacion">Zote el Todopoderoso</span>
+      <p>¡Ah, una criatura de mente lenta que busca la guía del gran Zote el Todopoderoso, un Caballero de Gran Renombre! Sé perfectamente de lo que hablas. Es natural que un ser tan insignificante como tú necesite de mis sublimes preceptos para no perecer a los dos pasos de salir de
+      <span class="tooltip_palabra">Bocasucia
+            <span class="tooltip_contenido">Ciudad en donde empieza nuestra aventura</span>
+      </span>
+      .</p>
+      <p>Aquí tienes mis preceptos dictados por mí, el único y verdadero héroe de
+      <span class="tooltip_palabra">Hallownest
+            <span class="tooltip_contenido">Reino donde se desarrolla Hollow knight</span>
+      </span>
+      . Escucha con atención, zoquete:</p>
+    </div>
+
+    <div class="adorno_separador"><span>✦</span></div>
+
+    <section class="consejos" aria-label="Consejos">
+      <div class="barra_herramientas_consejos panel_general aparicion_scroll">
+        <label class="buscador_consejos"><span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Buscar: pogo, Geo, amuletos, Jiji…" aria-label="Buscar un consejo" autocomplete="off">
+        </label>
+        <div class="botones_barra_herramientas">
+          <button class="boton_general boton_pequeno" id="expand-all" type="button">Abrir todos</button>
+          <button class="boton_general boton_pequeno boton_transparente" id="collapse-all" type="button">Cerrar todos</button>
+        </div>
+        <p class="contador_consejos" id="count" aria-live="polite"></p>
+      </div>
+      <p class="mensaje_sin_resultados panel_general" id="no-results" hidden>No encontré ningún consejo con eso. Prueba con otra palabra.</p>
+
+    <div id="zote-1" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 1: La técnica aérea suprema de Zote (pogo)</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>El pogo es una técnica avanzadísima que yo, en mi infinita genialidad, inventé durante mis primeras y peligrosas aventuras. Sirve para humillar a los enemigos más fuertes saltando sobre sus cabezas o para explorar zonas que bichos mediocres jamás pisarían. Es casi imposible de dominar para alguien de tu calibre, pero como soy un caballero misericordioso, te enseñaré mi técnica maestra:</h3>
+         <ul class="lol">
+           <li>Paso 1: Salta hacia el formidable enemigo (o hacia esos pinchos patéticos) a los que decidas imitar mi grandeza.</li>
+           <li>Paso 2: Cuando tu pánico natural te haga creer que vas a ser golpeado, desenfunda tu aguijón (si es que tienes uno digno) y golpea rápidamente hacia abajo.</li>
+           <li>Paso 3: Mi técnica hará que salgas despedido hacia arriba. Así podrás encadenar varios golpes seguidos, como yo lo hago mientras me río de mis rivales.</li>
+         </ul>
+       </div>
+     </div>
+    <div id="zote-2" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 2: El reflejo invencible del gran caballero (parry)</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Otra técnica secreta que descubrí mientras ponía orden en este reino en ruinas. Consiste en golpear con tu aguijón un ataque supuestamente "inesquivable". Esta gloriosa acción te otorgará una milésima de segundo de invulnerabilidad absoluta. Es tan ridículamente difícil de aprender como el pogo, pero si prestas atención a tu superior, podrías imitarlo flojamente:</h3>
+         <ul class="lol">
+           <li>Paso 1: Espera a que un enemigo te ataque con una ferocidad que a ti te congelaría la sangre.</li>
+           <li>Paso 2: En el último instante, golpea con tu aguijón con la fracción de la fuerza que yo poseo. Lograrás salvar tu pellejo, aunque, por supuesto, jamás me superarás en esto.</li>
+         </ul>
+       </div>
+     </div>
+    <div id="zote-3" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 3: Los combos</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Esta técnica la perfeccioné yo solo tras adentrarme en los rincones más oscuros de
+      <span class="tooltip_palabra">Nido profundo
+            <span class="tooltip_contenido">Zona en Hallownest donde las arañas reinan</span>
+      </span>
+         , aplastando arañas mutantes que suplicaban piedad. Consiste en encadenar feroces golpes de aguijón y entrelazarlos con hechizos para causar un daño devastador. Para tu mente limitada será un desafío, pero si intentas hacerlo como yo, te resultará casi sencillo:</h3>
+         <ul class="lol">
+           <li>Paso 1: Encuentra un enemigo con mucha vida. Intenta no morir en el intento, zoquete, que no estaré ahí para levantarte.</li>
+           <li>Paso 2: Descarga una lluvia implacable de golpes y hechizos sin parar hasta que la criatura entienda por qué soy temido.</li>
+         </ul>
+       </div>
+     </div>
+    <div id="zote-4" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 4: Las baratijas</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Los amuletos son baratijas y reliquias que puedes encontrar arrastrándote por el reino. Aumentan el poder, algo que tú necesitas desesperadamente. Aquí tienes algunos que SÓLO TIENES PERMITIDO MIRAR de mi magnífica y privada colección:</h3>
+         <ul class="lol">
+           <li><span class="tooltip_palabra">Corte rapido:
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/Corte_rapido-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+               Te permite mover el aguijón casi tan rápido como yo. Casi. Nadie es más rápido que yo.</li>
+           <li> <span class="tooltip_palabra">Fuerza Irrompible:
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/fuerza_irrompible-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+               Una rareza absoluta. Aumenta la potencia de tu aguijón para destrozar enemigos. Útil si no tienes mi fuerza natural.</li>
+           <li><span class="tooltip_palabra">Piedra del chaman:
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/piedra-del-chaman-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+                Se la arrebaté a un gigantesco chamán brujo invocador destructor tras humillarlo en combate. Potencia la fuerza de los hechizos.</li>
+           <li><span class="tooltip_palabra">Brújula Caprichosa:
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/brujula-caprichosa-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+                Esta la creé yo mismo, con mis propias manos, tras derrotar a una poderosa cartógrafa en una batalla a muerte. Sirve para guiarte en el mapa y que no te pierdas como el zopenco que eres.</li>
+         </ul>
+       </div>
+     </div>
+    <div id="zote-5" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 5: La flexibilidad táctica de una mente brillante</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>No te quedes estancado usando siempre las mismas baratijas, sé un poco inteligente y cámbialas según te convenga.</h3>
+         <h3>Si vas a explorar, equípate cosas que recojan
+         <span class="tooltip_palabra">Geo
+            <span class="tooltip_contenido">Moneda de Hallownest</span>
+      </span>
+       por ti (porque seguro te da pereza agacharte) o que te hagan correr más rápido. Y si vas a pelear —donde seguramente morirás y tendré que ir a rescatarte—, busca algo que aumente el daño de tus golpes o hechizos.</h3>
+       </div>
+     </div>
+    <div id="zote-6" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 6: Las sinergias secretas</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Tras experimentar con estos misteriosos objetos, mi brillante intelecto concluyó que hay combinaciones que son espléndidas juntas, como
+         <span class="tooltip_palabra">Corte rapido
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/Corte_rapido-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         y
+         <span class="tooltip_palabra">Fuerza Irrompible.
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/fuerza_irrompible-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+        </h3>
+         <h3> Pero hay sinergias ocultas que sólo un genio como yo podría aprovechar al máximo: si juntas el
+         <span class="tooltip_palabra">Tremanido
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/tremanido-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         con el
+         <span class="tooltip_palabra">Blasón del Defensor.
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/blason-del-defensor-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         , tu hechizo de
+         <span class="tooltip_palabra">Espiritu vengativo
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/espiritu_vengativo-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         disparará tremanidos mejorados y pestilentes. ¡Una genialidad digna de mí!</h3>
+       </div>
+     </div>
+    <div id="zote-7" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 7: Rescata tu gran fracaso</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Cuando mueras (porque tú sí mueres, a diferencia de mí), tu vasija se romperá y dejarás una sombra andrajosa en el lugar de tu fracaso, despertando tú en el último banco donde descansaste. Ve de inmediato a recuperarla. Si vuelves a morir antes de golpear a tu sombra, perderás todo tu
+         <span class="tooltip_palabra">Geo
+            <span class="tooltip_contenido">Moneda de Hallownest</span>
+      </span>
+        . Y créeme, no querrás ser pobre además de debilucho.</h3>
+       </div>
+     </div>
+    <div id="zote-8" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 8: El saqueo de los secretos ocultos</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Debes mantener tus ojos bien abiertos ante cada pared del reino. Muchas de ellas ocultan secretos y tesoros que esperan ser reclamados por alguien con mi grandeza. Si ves una pared con grietas, golpéala repetidamente con tu aguijón hasta destruirla. Detrás siempre hay salas secretas que yo ya he saqueado, o que dejé para los mendigos.</h3>
+       </div>
+     </div>
+    <div id="zote-9" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 9: El arte de escuchar</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Un gran guerrero como yo no sólo usa la vista, también escucha con cautela. Tienes que estar atento a los ruidos de los enemigos y a los suelos falsos.</h3>
+         <h3>Si caminas sobre un suelo destruible, sonará diferente. En ese momento, usa mi técnica modificada, el
+         <span class="tooltip_palabra">Salto desolador
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/salto_desolador-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         , para romperlo con estilo y descender a una nueva sala secreta.</h3>
+       </div>
+     </div>
+
+      <div class="bloque_galeria_juego">
+        <p class="titulo_galeria_juego">Postales de Hallownest</p>
+        <div class="galeria_juego">
+        <figure class="marco_imagen aparicion_scroll">
+          <img src="../Imagenes/imagenes_hollow/bosacusia-hollow-knight.webp" alt="Bocasucia, Hollow Knight" loading="lazy" decoding="async">
+          <figcaption>Donde empieza todo</figcaption>
+        </figure>
+        <figure class="marco_imagen aparicion_scroll">
+          <img src="../Imagenes/imagenes_hollow/nido_profundo-hollow-knight.webp" alt="Nido Profundo, Hollow Knight" loading="lazy" decoding="async">
+          <figcaption>Cuidado con las arañas</figcaption>
+        </figure>
+        <figure class="marco_imagen aparicion_scroll">
+          <img src="../Imagenes/imagenes_hollow/ciudad_de_lagrimas-hollow-knight.webp" alt="Ciudad de las Lágrimas, Hollow Knight" loading="lazy" decoding="async">
+          <figcaption>Lluvia eterna</figcaption>
+        </figure>
+        </div>
+      </div>
+    <div id="zote-10" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 10: La retirada estratégica para seres inferiores</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Si estás a punto de romperte y te quedan pocas máscaras, prioriza huir como el cobarde que eres y busca un banco para curarte. Esto evitará que mueras constantemente y que tenga que ver tu patética sombra en lugares peligrosos. No es algo que un Caballero de Gran Renombre como yo haría jamás, pero para debiluchos como tú, es una excelente opción.</h3>
+       </div>
+     </div>
+    <div id="zote-11" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 11: Administra bien tu alma</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>El Alma es esa sustancia que extraes al golpear enemigos y sirve para curarte o lanzar hechizos.</h3>
+         <h3>No la desperdicies de forma estúpida. Si te están atacando ferozmente, ¡no te cures en medio del golpe, pedazo de alcornoque! Espera a que el enemigo falle, cúrate en su momento de debilidad y luego vuelve a la carga con todo lo que tengas.</h3>
+       </div>
+     </div>
+    <div id="zote-12" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 12: Domina a moverte por el aire</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Esos monstruos ruidosos y torpes solo saben atacar hacia los lados. Cuando yo salto sobre ellos, uso mi gracia divina para golpearlos en la cabeza desde arriba mientras quedo fuera de su alcance.</h3>
+         <h3>Si vuelan, ataca rápido hacia los costados; mi velocidad lateral es inigualable. Aunque claro, para mí es un juego de niños, dudo que tus torpes extremidades logren imitar mi perfecta aerodinámica.</h3>
+       </div>
+     </div>
+    <div id="zote-13" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 13: No uses el dash sin motivo</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¡El dash es para moverse con estilo, no para entrar en pánico! Si lo usas a ciegas en batalla, terminarás ensartado en espinas o chocando contra un bicho asqueroso. Yo solo me impulso cuando mi mente brillante calcula el aterrizaje perfecto. Piensa antes de moverte, si es que tienes con qué pensar.</h3>
+       </div>
+     </div>
+    <div id="zote-14" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 14: El Geo es para los que saben gastarlo</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¿Llevar los bolsillos llenos? ¡Qué ridiculez! Si mueres por tu propia torpeza, esa patética sombra tuya se quedará con todo. Yo, por supuesto, no muero, pero tú deberías gastarlo inmediatamente. Dáselo a
+         <span class="tooltip_palabra">Iselda
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/iselda-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         , a la
+         <span class="tooltip_palabra">gorda Salubra
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/Salubra-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+          o al
+         <span class="tooltip_palabra">Forjaguijones
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/forjaguijones-hollow-knight.webp" alt="Hollow knight"></span>
+      </span>
+         .¿Milibelle? Esa banquera me mira con admiración, puedes dejarle tus monedas si te da miedo cargarlas.</h3>
+       </div>
+     </div>
+    <div id="zote-15" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 15: No camines en círculos, admira el paisaje</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Es normal que te pierdas, tu sentido de la orientación debe ser lamentable. Si una puerta está cerrada, no llores. Vete a otra parte, hazte un poco más fuerte (aunque jamás tanto como yo) y regresa cuando tengas las herramientas adecuadas. La paciencia es una virtud de los grandes guerreros.</h3>
+       </div>
+     </div>
+    <div id="zote-16" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 16: Clava tus ojos en el enemigo</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¿Qué pretendes? ¿Que vaya a rescatarte otra vez de las garras de alguna bestia? ¡No pienso perder mi valioso tiempo! Mira fijamente a tus rivales, estudia sus tontos patrones de ataque. Una vez que tu diminuto cerebro memorice lo que hacen, esquivarlos será tan fácil como lo es para mí.</h3>
+       </div>
+     </div>
+    <div id="zote-17" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 17: Un aguijón digno de un caballero</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Un arma poderosa intimida al enemigo antes de que empiece el combate. Mi aguijón, tallado por mí mismo en caparazon de madera, es perfecto. Pero como tú usas un trozo de metal mundano, busca esos minerales raros y haz que
+        <span class="tooltip_palabra">el Forjaguijones
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/forjaguijones-hollow-knight.webp" alt="Hollow knight"></span>
+     </span>
+          te lo mejore. No querrás que tus golpes parezcan cosquillas.</h3>
+       </div>
+     </div>
+    <div id="zote-18" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 18: Refuerza tu frágil caparazón</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Los seres débiles como tú necesitan máscaras y vasijas. Junta cuatro fragmentos de máscara para aguantar un golpe más, y tres de vasija para almacenar esa sustancia brillante que usan para sanar sus patéticas heridas. Yo no los necesito, mi sola presencia ahuyenta el peligro, pero a ti te vendrán de perlas.</h3>
+       </div>
+     </div>
+
+      <div class="bloque_galeria_juego">
+        <figure class="marco_imagen marco_imagen_ancho aparicion_scroll">
+          <img src="../Imagenes/imagenes_hollow/banner-zote-hollow-knight.webp" alt="Estatua de Zote en el Coliseo de los Necios" loading="lazy" decoding="async">
+          <figcaption>El único y verdadero héroe (según él)</figcaption>
+        </figure>
+      </div>
+    <div id="zote-19" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 19: Ve a llorarle a
+         <span class="tooltip_palabra">Jiji
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/jiji-hollow-knight.webp" alt="Hollow knight"></span>
+     </span></h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¿Has muerto y dejado tu sombra en un sitio lleno de monstruos horribles? Qué predecible. Hay una vieja extraña metida en una cueva en Bocasucia; se llama
+         <span class="tooltip_palabra">Jiji
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/jiji-hollow-knight.webp" alt="Hollow knight"></span>
+     </span>
+         . Si le llevas un huevo podrido (un manjar desagradable, si me lo preguntas), traerá tu sombra arrastrándose ante ti. Una solución ridícula para gente descuidada.</h3>
+       </div>
+     </div>
+    <div id="zote-20" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 20: Aprende de los maestros</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Esos tres "maestros del aguijón" ocultos por el mundo se creen la gran cosa. Sus técnicas son pasables. Ve, búscalos y aprende sus Artes del Aguijón. Te darán golpes más fuertes, vitales para alguien que carece de mi fuerza bruta natural.</h3>
+       </div>
+     </div>
+    <div id="zote-21" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 21: Un baño digno de la realeza</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Si encuentras esas piscinas de agua caliente y vaporosa, entra en ellas. No solo limpian la suciedad del viaje, sino que restauran tus fuerzas y llenan tu alma. A menudo me relajo en ellas mientras compongo poemas sobre mi propia gloria.</h3>
+       </div>
+     </div>
+    <div id="zote-22" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 22: No seas codicioso con los amuletos</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Si intentas meter a la fuerza más amuletos de los que tus muescas permiten, terminarás sobrecargado. ¿El resultado? Recibirás el doble de daño. Es un estado apto solo para alguien con mi resistencia legendaria; un alfeñique como tú se rompería en mil pedazos al primer rasguño. ¡No te pases de listo!</h3>
+       </div>
+     </div>
+    <div id="zote-23" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 23: Revisa las tiendas de los plebeyos</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>El viejo
+         <span class="tooltip_palabra">Sly
+            <span class="tooltip_contenido"><img class="tooltip_imagen" loading="lazy" src="../Imagenes/imagenes_hollow/sly-hollow-knight.webp" alt="Hollow knight"></span>
+     </span>
+          y los demás comerciantes consiguen cosas nuevas cuando les llevas ciertos objetos, como llaves antiguas. Vuelve a visitarlos de vez en cuando. Aunque para mí solo venden baratijas, para un vagabundo como tú pueden tener algo útil.</h3>
+       </div>
+     </div>
+    <div id="zote-24" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 24: Vende la basura del pasado</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¿Has encontrado diarios viejos, sellos de Hallownest o ídolos raros? Para mí son basura, pero hay un viejo testarudo en la Ciudad de las Lágrimas, Lemm, que pierde la cabeza por esas antigüedades. Llevaselas y te dará una buena cantidad de Geo. ¡Dinero fácil!</h3>
+       </div>
+     </div>
+    <div id="zote-25" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 25: Rescata a los gusanos maricas</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¿Escuchas esos lamentos agudos por las paredes? Son unas larvas indefensas metidas en frascos. Rompe el vidrio y libéralas. Su padre, un bicho enorme y regordete en los Cruces, te soltará recompensas cada vez que salves a sus hijos. Alguien tiene que hacer el trabajo caritativo, y claramente yo estoy muy ocupado siendo magnífico.</h3>
+       </div>
+     </div>
+    <div id="zote-26" class="tarjeta_consejo aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 26: Medita en el banco antes de la gloria</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>Antes de enfrentarte a un monstruo mayor, siéntate en un banco y acomoda tus amuletos. Piensa en una estrategia que combine bien. Yo no necesito prepararme, pues mi victoria está escrita en las estrellas, pero tú necesitas toda la ayuda posible.</h3>
+       </div>
+     </div>
+    <div id="zote-27" class="tarjeta_consejo loy aparicion_scroll">
+       <div class="tarjeta_consejo_cabecera" onclick="toggleConsejo(this)">
+         <h2>Consejo numero 27: Regresa a tus viejos pasos</h2>
+         <span class="tarjeta_consejo_flecha">▼</span>
+       </div>
+       <div class="tarjeta_consejo_contenido">
+         <h3>¿Viste un camino alto al que no podías llegar? No lo olvides. Cuando consigas nuevas habilidades gracias a mis enseñanzas, regresa a esas zonas del mapa. Encontrarás secretos, materiales y tesoros que antes se burlaban de tu incapacidad de saltar alto. ¡Explora como un verdadero caballero!</h3>
+       </div>
+     </div>
+    </section>
+
+    <section class="bloque_siguiente_guia panel_general aparicion_scroll">
+      <p class="etiqueta_superior_titulo">¿Ya terminaste con Zote?</p>
+      <h2>Ahora cruza a Pharloom</h2>
+      <p>Shakra, cartógrafa y bastante más humilde, tiene otros 30 consejos esperándote.</p>
+      <a class="boton_general" href="silksong.html">Ir con Shakra →</a>
+      &nbsp; <a class="boton_general boton_transparente" href="#" data-random>Consejo al azar ✦</a>
+    </section>
+  </main>
+
+  <footer class="pie_sitio oni">
+    <div class="pie_cuadricula">
+      <div class="pie_columna pie_columna_marca">
+        <h4 class="pie_logo">Los 57 consejos<br>de Zote y Shakra</h4>
+        <p>Una guía hecha por fans, para fans. Dos reinos, dos guías y muchísimo ego (el de Zote, sobre todo). Hollow Knight y Hollow Knight: Silksong son creaciones de Team Cherry.</p>
+        <div class="pie_insignias"><span>27 consejos de Zote</span><span>30 de Shakra</span></div>
+      </div>
+      <div class="pie_columna">
+        <h5>Navegar</h5>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="hollow.html">Hollow Knight</a></li>
+          <li><a href="silksong.html">Silksong</a></li>
+          <li><a href="#" data-random>Consejo al azar ✦</a></li>
+        </ul>
+      </div>
+      <div class="pie_columna">
+        <h5>Los reinos</h5>
+        <ul>
+          <li><a href="hollow.html">Hallownest · con Zote</a></li>
+          <li><a href="silksong.html">Pharloom · con Shakra</a></li>
+        </ul>
+        <p class="pie_frase">“Mi victoria está escrita en las estrellas.”<br>— Zote</p>
+      </div>
+      <div class="pie_columna">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="mailto:rodriguez.facundonehuen@gmail.com">rodriguez.facundonehuen@gmail.com</a></li>
+          <li><a href="mailto:valenbusta151@gmail.com">valenbusta151@gmail.com</a></li>
+        </ul>
+        <p style="margin-top:.9rem">¿Encontraste un error o tienes una sugerencia? Escríbenos.</p>
+      </div>
+    </div>
+    <div class="pie_legal">
+      <div class="pie_legal_izquierda">
+        <p>Todos los personajes y marcas registradas pertenecen a sus respectivos propietarios.</p>
+        <p>Esto es un proyecto sin fines de lucro.</p>
+      </div>
+      <div class="pie_legal_derecha">
+        <button class="pie_boton_volver" type="button">Volver arriba ↑</button>
+        <p>© <span class="year">2026</span> · Hecho con cariño por fans</p>
+      </div>
+    </div>
+  </footer>
+  <button class="boton_subir" id="to-top" type="button" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
