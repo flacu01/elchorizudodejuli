@@ -145,25 +145,9 @@
     </section>
 
     <section class="bloque_seccion" id="comentarios">
-      <h2 class="titulo_seccion aparicion_scroll">Comentarios</h2>
-      <p class="descripcion_seccion aparicion_scroll">Deja tu opinión y lee lo que piensan otros viajeros de Hallownest y Pharloom.</p>
-      <div class="comentarios_contenedor">
-        <form class="comentarios_formulario panel_general aparicion_scroll" id="comment-form" novalidate>
-          <label for="c-email">Tu Gmail</label>
-          <input id="c-email" type="email" name="email" required maxlength="100" placeholder="tuusuario@gmail.com" autocomplete="email">
-          <p class="comentarios_nota_campo">Tu correo no se muestra: solo se verá una versión parcial, por ejemplo tus***@gmail.com.</p>
-          <label for="c-texto">Tu comentario</label>
-          <textarea id="c-texto" name="texto" required maxlength="500" rows="4" placeholder="¿Qué te pareció la guía?"></textarea>
-          <input type="text" name="web" class="comentarios_campo_trampa" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="comentarios_formulario_pie">
-            <span id="char-count">0 / 500</span>
-            <button class="boton_general" type="submit">Publicar</button>
-          </div>
-          <p class="comentarios_mensaje_formulario" id="form-msg" role="status"></p>
-          <p class="comentarios_nota_campo" id="comments-mode" hidden></p>
-        </form>
-        <div class="comentarios_lista" id="comments-list" aria-live="polite"></div>
-      </div>
+    <h2 class="titulo_seccion aparicion_scroll">Comentarios</h2>
+    <p class="descripcion_seccion aparicion_scroll">Deja tu opinión y lee lo que piensan otros viajeros de Hallownest y Pharloom.</p>
+    <?php require DIR_INCLUDES . '/comentarios_seccion.php'; ?>
     </section>
 
   </main>
@@ -215,7 +199,5 @@
   <button class="boton_subir" id="to-top" type="button" aria-label="Volver arriba">↑</button>
 
   <script src="js/script.js"></script>
-  <script src="js/comentarios-config.js"></script>
-  <script src="js/comentarios.js"></script>
 </body>
 </html>
