@@ -1,4 +1,4 @@
-<?php $raiz = "../"; require __DIR__ . "/../includes/sesion.php"; requerir_login($raiz, "pages/hollow.php"); ?>
+<?php $raiz = "../"; require __DIR__ . "/../includes/sesion.php"; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
