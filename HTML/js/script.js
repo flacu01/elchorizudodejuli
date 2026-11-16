@@ -201,7 +201,7 @@ function toggleConsejo(header) {
 
   function randomAdvice() {
     const n = Math.ceil(Math.random() * 57);
-    return n <= 27 ? base + 'hollow.html#zote-' + n : base + 'silksong.html#shakra-' + (n - 27);
+    return n <= 27 ? base + 'hollow.php#zote-' + n : base + 'silksong.php#shakra-' + (n - 27);
   }
   function setupRandom() {
     $$('[data-random]').forEach(el => {
