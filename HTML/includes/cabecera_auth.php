@@ -17,6 +17,7 @@
       <ul>
         <li class="nav_item_izquierda"><a href="pages/hollow.php">Hollow Knight</a></li>
         <li class="nav_item_centro"><a href="index.php" class="nav_enlace_inicio">✦ Inicio ✦</a></li>
+        <li class="nav_item_centro"><a href="pages/sobre-nosotros.php">Sobre nosotros</a></li>
         <li class="nav_item_derecha"><a href="pages/silksong.php">Silksong</a></li>
       </ul>
     </nav>

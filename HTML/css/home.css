@@ -468,7 +468,7 @@ body.pagina_filtrando .bloque_galeria_juego { display: none; }
 /* ===== Login / sesión ===== */
 .barra_sesion {
   display: flex; justify-content: flex-end; align-items: center; gap: 1rem;
-  max-width: 1280px; margin: 0 auto .3rem;
+  margin: 0 0 .3rem;
   font-family: var(--f-title); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
 }
 .nav_principal .barra_sesion a { font-size: .72rem; font-weight: 500; letter-spacing: .12em; color: var(--accent); padding: .1rem .2rem; }
@@ -480,3 +480,9 @@ body.pagina_filtrando .bloque_galeria_juego { display: none; }
 }
 .comentarios_formulario input[type="text"]:focus, .comentarios_formulario input[type="password"]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
 .comentarios_formulario_pie a { color: var(--accent); font-size: 1rem; }
+
+/* Nav con 4 enlaces: en pantallas chicas se acomoda en dos filas */
+@media (max-width: 760px) {
+  .nav_principal ul { flex-wrap: wrap; justify-content: center; row-gap: .2rem; }
+  .nav_principal li, .nav_principal li.nav_item_izquierda, .nav_principal li.nav_item_derecha { flex: 1 1 auto; text-align: center; }
+}

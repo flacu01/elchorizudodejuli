@@ -19,6 +19,7 @@
       <ul>
         <li class="nav_item_izquierda"><a href="pages/hollow.php">Hollow Knight</a></li>
         <li class="nav_item_centro"><a href="index.php" class="nav_enlace_inicio nav_enlace_activo">✦ Inicio ✦</a></li>
+        <li class="nav_item_centro"><a href="pages/sobre-nosotros.php">Sobre nosotros</a></li>
         <li class="nav_item_derecha"><a href="pages/silksong.php">Silksong</a></li>
       </ul>
     </nav>
@@ -163,6 +164,7 @@
         <h5>Navegar</h5>
         <ul>
           <li><a href="index.php">Inicio</a></li>
+          <li><a href="pages/sobre-nosotros.php">Sobre nosotros</a></li>
           <li><a href="pages/hollow.php">Hollow Knight</a></li>
           <li><a href="pages/silksong.php">Silksong</a></li>
           <li><a href="#" data-random>Consejo al azar ✦</a></li>

@@ -19,6 +19,7 @@
       <ul>
         <li class="nav_item_izquierda"><a href="hollow.php" class="nav_enlace_activo">Hollow Knight</a></li>
         <li class="nav_item_centro"><a href="../index.php" class="nav_enlace_inicio">✦ Inicio ✦</a></li>
+        <li class="nav_item_centro"><a href="sobre-nosotros.php">Sobre nosotros</a></li>
         <li class="nav_item_derecha"><a href="silksong.php">Silksong</a></li>
       </ul>
     </nav>
@@ -339,8 +340,14 @@
 
       <div class="bloque_galeria_juego">
         <figure class="marco_imagen marco_imagen_ancho aparicion_scroll">
-          <img src="../Imagenes/imagenes_hollow/banner-zote-hollow-knight.webp" alt="Estatua de Zote en el Coliseo de los Necios" loading="lazy" decoding="async">
-          <figcaption>El único y verdadero héroe (según él)</figcaption>
+         <style>
+          .zote_secreto { display: block; cursor: pointer; }
+          .zote_secreto img { transition: filter .4s, transform .4s; }
+          .zote_secreto:hover img { filter: brightness(1.35) drop-shadow(0 0 22px #ffe9a8); transform: scale(1.02); }
+         </style>
+        <a href="zote-minijuego.php" class="zote_secreto" aria-label="Estatua de Zote">
+         <img src="../Imagenes/imagenes_hollow/banner-zote-hollow-knight.webp" alt="Estatua de Zote en el Coliseo de los Necios" loading="lazy" decoding="async">
+        </a>
         </figure>
       </div>
     <div id="zote-19" class="tarjeta_consejo aparicion_scroll">
@@ -457,6 +464,7 @@
         <h5>Navegar</h5>
         <ul>
           <li><a href="../index.php">Inicio</a></li>
+          <li><a href="sobre-nosotros.php">Sobre nosotros</a></li>
           <li><a href="hollow.php">Hollow Knight</a></li>
           <li><a href="silksong.php">Silksong</a></li>
           <li><a href="#" data-random>Consejo al azar ✦</a></li>

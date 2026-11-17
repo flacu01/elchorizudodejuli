@@ -22,3 +22,14 @@ CREATE TABLE IF NOT EXISTS `comentarios` (
   KEY `idx_creado` (`creado`),
   CONSTRAINT `fk_comentarios_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE IF NOT EXISTS `puntajes` (
+  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `usuario_id` int UNSIGNED NOT NULL,
+  `puntos` int UNSIGNED NOT NULL,
+  `kills` int UNSIGNED NOT NULL DEFAULT 0,
+  `creado` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_puntos` (`puntos`),
+  CONSTRAINT `fk_puntajes_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
