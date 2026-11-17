@@ -15,8 +15,10 @@ HTML, CSS, JavaScript, PHP y MySQL (login con sesiones).
 Hecho por Facundo Rodriguez y Valentino Bustamante
 
 ## Cómo correrlo en tu PC (XAMPP)
-1. Copiar esta carpeta dentro de `htdocs` (ej: `C:\xampp\htdocs\elchorizudodejuli`).
-2. Encender Apache y MySQL en XAMPP.
-3. En phpMyAdmin crear la base `hollow_web` (cotejamiento `utf8mb4_general_ci`) e importar `bd/hollow_web.sql`.
-4. Copiar `HTML/conexion.ejemplo.php` como `HTML/conexion.php` y ajustar clave y puerto.
-5. Abrir `http://localhost/elchorizudodejuli/HTML/index.php`.
+1. Clonar el repo dentro de `htdocs` (o bajar el ZIP y renombrar la carpeta a `elchorizudodejuli`):
+   `git clone https://github.com/flacu01/elchorizudodejuli.git`
+2. Encender **Apache** y **MySQL** en el panel de XAMPP.
+3. Abrir `http://localhost/elchorizudodejuli/HTML/index.php`.
+
+La primera vez, `HTML/conexion.php` crea sola la base `hollow_web` y sus tablas a partir de `bd/hollow_web.sql`.
+Si tu MySQL usa otra clave o puerto, ajustá la lista `$intentos` en ese archivo.

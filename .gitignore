@@ -4,6 +4,3 @@ Thumbs.db
 node_modules/
 .env
 *.log
-
-# Datos de conexión reales de cada PC (se usa conexion.ejemplo.php como plantilla)
-HTML/conexion.php
